@@ -1,0 +1,15 @@
+inherit mate
+
+NAME="mate-file-archiver"
+VERSION=1.4.0
+RELEASE=1
+CATEGORY="MATE"
+SUMMARY="MATE archive manager (aka Engrampa)"
+DESCRIPTION="MATE is a fork of the GNOME 2 desktop. It provides an intuitive
+and attractive desktop to Linux users using traditional metaphors."
+REQUIRES="arj binutils bzip2 cpio dpkg gzip genisoimage lha lrzip lzip lzop ncompress p7zip rzip tar unace unalz xz zip zoo"
+
+PKG_NAMES="${NAME} mate-file-manager-archive"
+mate_file_archiver_CONTENTS="--exclude=usr/lib/caja etc/ usr/"
+mate_file_manager_archive_REQUIRES="mate-file-archiver"
+mate_file_manager_archive_CONTENTS="usr/lib/caja/"
