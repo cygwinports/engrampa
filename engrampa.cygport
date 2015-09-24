@@ -11,7 +11,7 @@ REQUIRES="arj binutils bzip2 cpio gzip genisoimage lrzip lzip lzop ncompress p7z
 
 PKG_NAMES="${NAME} caja-archive"
 engrampa_OBSOLETES="mate-file-archiver"
-engrampa_CONTENTS="--exclude=usr/lib/caja etc/ usr/"
+engrampa_CONTENTS="--exclude=caja etc/ usr/"
 caja_archive_OBSOLETES="mate-file-manager-archive"
 caja_archive_REQUIRES=${NAME}
-caja_archive_CONTENTS="usr/lib/caja/"
+caja_archive_CONTENTS="usr/lib/caja/ usr/share/caja/"
