@@ -1,7 +1,7 @@
 inherit mate
 
 NAME="engrampa"
-VERSION=1.14.1
+VERSION=1.16.0
 RELEASE=1
 CATEGORY="MATE"
 SUMMARY="MATE archive manager"
@@ -15,3 +15,5 @@ engrampa_CONTENTS="--exclude=caja etc/ usr/"
 caja_archive_OBSOLETES="mate-file-manager-archive"
 caja_archive_REQUIRES=${NAME}
 caja_archive_CONTENTS="usr/lib/caja/ usr/share/caja/"
+
+CYGCONF_ARGS="--with-gtk=3.0"
